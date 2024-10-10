@@ -8,14 +8,14 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #d3d9D4;
+    color: #2e3944;
 }
 
 /* Navigációs menü */
 nav {
-    background: #333;
-    color: white;
+    background: #212A31;
+    color: #d3d9D4;
     padding: 15px 0;
     position: fixed;
     width: 100%;
@@ -40,14 +40,14 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #d3d9d4;
     text-decoration: none;
     font-weight: 400;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #4CAF50;
+    color: #124e66;
 }
 
 /* Szekciók */
@@ -65,7 +65,7 @@ section {
 h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #4CAF50;
+    color: #124e66;
 }
 
 /* Projektek */
@@ -76,21 +76,44 @@ h2 {
 }
 
 .project-item {
-    background: white;
+    background-color: #748d92;
     margin: 15px;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 15px #212A31;
     flex: 0 0 30%;
 }
+/* Social media linkek stílusozása */
+.social-links {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.social-links a {
+    text-decoration: none;
+    color: #212A31; /* Alapértelmezett szín */
+    font-size: 2rem;
+    margin-right: 15px; /* Távolság az ikonok között */
+    transition: color 0.3s ease; /* Animáció a színváltozáskor */
+}
+
+.social-links a:hover {
+    color: #124e66; /* Szín változik, ha ráhúzod az egeret */
+}
+
 
 img{
     width: 20%;
     height: 20%;
-    margin-top: 80px;
+    margin-top: 100px;
     display: block;
+    block-size: auto;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 50%; /* Kör alakú vágás */
+    object-fit: cover; /* A kép megtartja az arányait a körben */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), /* Külső árnyék */
+                0 0 0 10px rgba(255, 255, 255, 0.5); /* Átlátszó hatás a széleknél */
     
 
 }
@@ -104,16 +127,55 @@ img{
 .skills-list li {
     margin: 10px 0;
 }
-
 /* Kapcsolat */
 .contact-section p {
     font-size: 1.2rem;
 }
+/* Nyelvtudás szekció */
+.skill {
+    margin-bottom: 20px;
+}
+
+.skill span {
+    display: block;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #212a31;
+}
+
+.progress-bar {
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    overflow: hidden;
+    height: 25px;
+    width: 100%;
+}
+
+.progress {
+    background-color: #124e66;
+    height: 100%;
+    text-align: center;
+    line-height: 25px; /* Megfelelő vertikális igazítás */
+    color: white;
+    border-radius: 25px 0 0 25px; /* A sáv kerekítése csak bal oldalon */
+}
+
+/* Reszponzív kialakítás */
+@media (max-width: 768px) {
+    .progress-bar {
+        height: 20px;
+    }
+
+    .skill span {
+        font-size: 1rem;
+    }
+}
+
 
 /* Footer */
 footer {
-    background: #333;
-    color: white;
+    background: #212a31;
+    color: #d3d9d4;
     text-align: center;
     padding: 20px 0;
     margin-top: 40px;
